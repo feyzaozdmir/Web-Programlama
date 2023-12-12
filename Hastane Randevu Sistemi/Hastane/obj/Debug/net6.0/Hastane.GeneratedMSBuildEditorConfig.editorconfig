@@ -18,8 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/feyza/Desktop/Hastane Randevu Sistemi/Hastane/Views/Home/DoktorS.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEb2t0b3JTLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/feyza/Desktop/Hastane Randevu Sistemi/Hastane/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/feyza/Desktop/Hastane Randevu Sistemi/Hastane/Views/Home/Poliklinik.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb2xpa2xpbmlrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/feyza/Desktop/Hastane Randevu Sistemi/Hastane/Views/Poliklinik/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9saWtsaW5pa1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/feyza/Desktop/Hastane Randevu Sistemi/Hastane/Views/Shared/Error.cshtml]

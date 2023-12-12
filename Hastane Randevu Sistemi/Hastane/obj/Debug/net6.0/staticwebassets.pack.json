@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\feyza\\Desktop\\Hastane Randevu Sistemi\\Hastane\\wwwroot\\images\\doctor.jpg",
+      "PackagePath": "staticwebassets\\images\\doctor.jpg"
+    },
+    {
+      "Id": "C:\\Users\\feyza\\Desktop\\Hastane Randevu Sistemi\\Hastane\\wwwroot\\images\\doctor1.jpg",
+      "PackagePath": "staticwebassets\\images\\doctor1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\feyza\\Desktop\\Hastane Randevu Sistemi\\Hastane\\wwwroot\\images\\doctorn.jpg",
+      "PackagePath": "staticwebassets\\images\\doctorn.jpg"
+    },
+    {
+      "Id": "C:\\Users\\feyza\\Desktop\\Hastane Randevu Sistemi\\Hastane\\wwwroot\\images\\doctorr.jpg",
+      "PackagePath": "staticwebassets\\images\\doctorr.jpg"
+    },
+    {
       "Id": "C:\\Users\\feyza\\Desktop\\Hastane Randevu Sistemi\\Hastane\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

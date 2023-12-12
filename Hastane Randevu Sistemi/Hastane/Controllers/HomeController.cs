@@ -17,7 +17,15 @@ namespace Hastane.Controllers
         {
             return View();
         }
- 
+        public IActionResult DoktorS()
+        {
+            return View();
+        }
+        public IActionResult Poliklinik()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
