@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Hastane</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Hastane.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" style="background-color:lavender">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" style="color:forestgreen">Hastane Randevu Sistemi</a>
+                </div>
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="DoktorS">Doktorlarımız</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Poliklinik" asp-action="Index">Polikliniklerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">İletişim</a>
+                    </li>
+                </ul>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="nav navbar-nav navbar-right btn btn-outline-success border-3"  type="button">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">RANDEVU AL</a>
+                    </button>
+                    <button class="nav navbar-nav navbar-right btn btn-outline-secondary border-2" type="button" >
+                        <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action=""> Login</a>
+                    </button>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    
+    <footer class="border-top footer text-muted">
+        <div style="background-color:#edf2fe">
+            <div class="container">
+                <p style="color:forestgreen">G201210402 - FEYZA NUR ÖZDEMİR PROJESİ</p>
+            </div>
+        </div>
+       
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
