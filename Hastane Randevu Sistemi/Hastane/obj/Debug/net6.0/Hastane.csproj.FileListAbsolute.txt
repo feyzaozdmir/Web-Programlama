@@ -28,3 +28,4 @@ C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\obj\Debug\net6.0\refint\H
 C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\obj\Debug\net6.0\Hastane.pdb
 C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\obj\Debug\net6.0\Hastane.genruntimeconfig.cache
 C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\obj\Debug\net6.0\ref\Hastane.dll
+C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\obj\Debug\net6.0\Hastane.sourcelink.json
