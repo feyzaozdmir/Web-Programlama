@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\feyza\\Documents\\GitHub\\Web-Programlama\\Hastane Randevu Sistemi\\Hastane\\Hastane.csproj": {}
+    "C:\\Users\\feyza\\Desktop\\Hastane Randevu Sistemi\\Hastane\\Hastane.csproj": {}
   },
   "projects": {
-    "C:\\Users\\feyza\\Documents\\GitHub\\Web-Programlama\\Hastane Randevu Sistemi\\Hastane\\Hastane.csproj": {
+    "C:\\Users\\feyza\\Desktop\\Hastane Randevu Sistemi\\Hastane\\Hastane.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\feyza\\Documents\\GitHub\\Web-Programlama\\Hastane Randevu Sistemi\\Hastane\\Hastane.csproj",
+        "projectUniqueName": "C:\\Users\\feyza\\Desktop\\Hastane Randevu Sistemi\\Hastane\\Hastane.csproj",
         "projectName": "Hastane",
-        "projectPath": "C:\\Users\\feyza\\Documents\\GitHub\\Web-Programlama\\Hastane Randevu Sistemi\\Hastane\\Hastane.csproj",
+        "projectPath": "C:\\Users\\feyza\\Desktop\\Hastane Randevu Sistemi\\Hastane\\Hastane.csproj",
         "packagesPath": "C:\\Users\\feyza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\feyza\\Documents\\GitHub\\Web-Programlama\\Hastane Randevu Sistemi\\Hastane\\obj\\",
+        "outputPath": "C:\\Users\\feyza\\Desktop\\Hastane Randevu Sistemi\\Hastane\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
