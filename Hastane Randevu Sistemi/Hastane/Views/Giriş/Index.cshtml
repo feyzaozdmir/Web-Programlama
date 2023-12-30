@@ -1,4 +1,5 @@
-﻿@model GirişModel
+﻿@model Hastane.Models.GirişModel
+@using Hastane.Models
 @{
     ViewData["Title"] = "Hoşgeldiniz Lütfen Giriş Yapınız";
 }
@@ -6,7 +7,7 @@
 
 
 <div class="center">
-    <form class="form" asp-action="Giriş" asp-controller="Giriş" method="post">
+    <form class="form" asp-action="Index" asp-controller="Giriş">
         <p class="form-title">Sign in to your account</p>
         <div class="input-container">
             <label asp-for="Email">Email</label>
@@ -19,10 +20,10 @@
             <span asp-validation-for="Password"></span>
         </div>
 
-        <button type="submit" class="submit">Giriş Yap</button>
+       <input type="submit" />
 
-        <p class ="signup-link">Eğer kayıtlı değilseniz, <a asp-action="" asp-controller="">kayıt olunuz.</a></p>
-
+        @* <p class ="signup-link">Eğer kayıtlı değilseniz, <a asp-controller="Kayit" asp-action="Index">kayıt olunuz.</a></p> *@
+      
     </form>
 </div>
 <!--  BURAYA "KAYDOLMADIYSANIZ KAYIT OL" EKLE-->

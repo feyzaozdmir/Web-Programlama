@@ -34,8 +34,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWxldGlzaW1cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/feyza/Desktop/Hastane Randevu Sistemi/Hastane/Views/Kayit/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F5aXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/feyza/Desktop/Hastane Randevu Sistemi/Hastane/Views/Poliklinik/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9saWtsaW5pa1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/feyza/Desktop/Hastane Randevu Sistemi/Hastane/Views/Randevu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/feyza/Desktop/Hastane Randevu Sistemi/Hastane/Views/Shared/Error.cshtml]
