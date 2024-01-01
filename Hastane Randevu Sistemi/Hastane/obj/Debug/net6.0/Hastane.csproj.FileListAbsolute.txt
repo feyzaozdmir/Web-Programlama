@@ -248,3 +248,15 @@ C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\bin\Debug\net6.0\System.D
 C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\obj\Debug\net6.0\Hastane.Resources.Index.en.resources
+C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\obj\Debug\net6.0\Hastane.Resources.Index.tr.resources
+C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\obj\Debug\net6.0\Hastane.csproj.GenerateResource.cache
+C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\bin\Debug\net6.0\en\Hastane.resources.dll
+C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\bin\Debug\net6.0\tr\Hastane.resources.dll
+C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\obj\Debug\net6.0\en\Hastane.resources.dll
+C:\Users\feyza\Desktop\Hastane Randevu Sistemi\Hastane\obj\Debug\net6.0\tr\Hastane.resources.dll

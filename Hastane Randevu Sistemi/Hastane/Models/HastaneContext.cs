@@ -7,6 +7,7 @@ namespace Hastane.Models
     {
         public DbSet<GirişModel> Giris { get; set; }
         public DbSet<KayitModel> Kayit { get; set; }
+        public DbSet<RandevuModel> Randevu { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Hastn;Trusted_Connection=True;MultipleActiveResultSets=true");

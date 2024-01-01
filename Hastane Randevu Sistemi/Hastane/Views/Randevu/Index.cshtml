@@ -1,38 +1,104 @@
-﻿@* @model Hastane.Models.RandevuModel
+﻿@using Hastane.Models
+@model Hastane.Models.RandevuModel
 
 @{
-    ViewBag.Title = "Randevu Al";
+    ViewBag.Title = "RandevuAl";
 }
 
 <h2>Randevu Al</h2>
+<div class="form-group">
+    <form asp-controller="Randevu" asp-action="Index" method="post">
+        <label>Hasta Adı:</label>
+        @Html.TextBoxFor(m=>m.Ad,new{@class = "form-control"})
+        @* <input asp-for="Ad" /> *@
+        <span asp-validation-for="Ad"></span>
+        <label>Hasta Soyadı:</label>
+        @Html.TextBoxFor(m => m.SoyAd, new { @class = "form-control" })
+       @*  <input asp-for="SoyAd" /> *@
+        <span asp-validation-for="SoyAd"></span>
+        <label>Randevu Tarihi:</label>
+        @* <input asp-for="Tarih bir dk" /> *@
+        @Html.TextBoxFor(m => m.Saat, ("dd/mm/yyyy"), new { @class = "form-control", @type = "datetime-local" })
+        <span asp-validation-for="SoyAd"></span>
 
-@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken()
+       @*  <label>Randevu Tarihi:</label>
+        <select asp-for="Saat" asp-items="@Model.SaatSecenekleri">
+            <option value="">--Saat Seç--</option>
+        </select>
+        <span asp-validation-for="Saat"></span>
+         *@
 
-    <div class="form-horizontal">
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <label>Poliklinik Seçimi:</label>
+        <select asp-for="PoliklinikId">
+            <option value="">-- Poliklinik Seç --</option>
+            <option value="AcilServis">Acil Servis</option>
+            <option value="BeyinVeSinirCerrahisi">Beyin ve Sinir Cerrahisi</option>
+            <option value="CocukSagligiVeHastaliklari">Çocuk Sağlığı ve Hastalıkları</option>
+            <option value="Dermatoloji">Dermatoloji</option>
+            <option value="GenelCerrahi">Genel Cerrahi</option>
+            
+        </select>
+        <span asp-validation-for="PoliklinikId"></span>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Ad, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Ad, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Ad, "", new { @class = "text-danger" })
-            </div>
-        </div>
+        <label for="DoktorId">Doktor Seçim:</label>
+        <select asp-for="DoktorId"></select>
+        <span asp-validation-for="DoktorId"></span>
 
-        <!-- Diğer form alanları için aynı yapıyı tekrarlayabilirsiniz -->
 
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Randevu Al" class="btn btn-primary" />
-            </div>
-        </div>
-    </div>
-}
+
+        <button type="submit">Randevu Al</button>
+    </form>
+</div>
+<div></div>
 
 <div>
     @Html.ActionLink("Geri Dön", "Index","Home")
 </div>
- *@
+
+
+<script>
+    var PoliklinikId = document.getElementById('PoliklinikId');
+    var DoktorId = document.getElementById('DoktorId');
+
+    PoliklinikId.addEventListener('change', function () {
+        DoktorId.innerHTML = '';
+
+        var PoliklinikId = this.value;
+
+        if (PoliklinikId === 'AcilServis') {
+            DoktorId.innerHTML += `
+                            <option value="MuratDogan" > Dr.Murat Doğan </option>
+                            <option value = "AhmetOzdemir" > Dr.Öğr.Üyesi Ahmet Özdemir </option>
+                            <option value = "AyberkOzdemir" > Uzm.Dr.Ayberk Özdemir </option>
+                    `;
+        }
+        else if (PoliklinikId === "BeyinVeSinirCerrahisi") {
+            DoktorId.innerHTML += `
+                        <option value = "NurOzdemir" > Prof.Dr.Nur Özdemir </option>
+                            <option value = "AliOzdemir" > Dr.Ali Özdemir </option>
+                                <option value = "VeliOzdemir" > Uzm.Dr.Veli Özdemir </option>
+                    `;
+        }
+        else if (PoliklinikId === "CocukSagligiVeHastaliklari") {
+            DoktorId.innerHTML += `
+                                <option value = "AnilOzdemir" > Uzm.Dr.Anıl Özdemir </option>
+                                    <option value = "OzanOzdemir" > Uzm.Dr.Ozan Özdemir </option>
+                                        <option value = "AygunOzdemir" > Uzm.Dr.Aygün Özdemir </option>
+                        `;
+        }
+        else if (PoliklinikId === "Dermatoloji") {
+            DoktorId.innerHTML += `
+                    <option value="MertOzdemir">Uzm. Dr. Mert Özdemir</option>
+                    <option value="TunahanOzdemir">Uzm. Dr. Tunahan Özdemir</option>
+                    <option value="TalhaOzdemir">Uzm. Dr. Talha Özdemir</option>
+                            `;
+        }
+        else if (PoliklinikId === "GenelCerrahi") {
+            DoktorId.innerHTML += `
+                             <option value="AhmetSengul"> Uzm. Dr. Ahmet Ayberk Şengül</option>
+                             <option value="NurSengul">Prof. Dr. Nur Şengül</option>
+                             <option value="AnılKale">Uzm. Dr. Anıl Ozan Kale</option>
+                                `;
+        }
+    });
+</script>  
